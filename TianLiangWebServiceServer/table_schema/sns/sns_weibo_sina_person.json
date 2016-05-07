@@ -1,0 +1,99 @@
+{  
+      "properties":{  
+         "uid":{
+            "type":"long",
+	    "store":"yes",
+            "index":"not_analyzed"  
+         },  
+	"send_url":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"
+         },
+	"name":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"
+         },
+	"sex":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"
+         },
+	"birthday":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"
+         },
+	"address":{
+            "type":"string",
+            "store":"yes",
+	    "index_analyzer": "index_ansj",
+            "search_analyzer": "query_ansj"
+         },
+	 "fans_number":{
+            "type":"long",
+	    "store":"yes",
+	    "index":"not_analyzed"	
+         },
+	"summary":{
+            "type":"string",
+            "store":"yes",
+	        "index_analyzer": "index_ansj",
+            "search_analyzer": "query_ansj"	
+         },
+	"wb_number":{
+            "type":"long",
+            "store":"yes",
+            "index":"not_analyzed"      
+         },
+	"gz_number":{
+            "type":"long",
+            "store":"yes",
+            "index":"not_analyzed"      
+         },
+	"weibo_type":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"      
+         },
+	 "real_name":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"
+         },
+	 "edu":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"
+         },
+	 "renzheng":{
+            "type":"string",
+            "store":"yes",
+	    "index_analyzer": "index_ansj",
+            "search_analyzer": "query_ansj"	
+         },
+	 "tags":{
+            "type":"string",
+            "store":"yes",
+	    "index_analyzer": "index_ansj",
+            "search_analyzer": "query_ansj"	
+         },
+	"verify_info":{
+            "type":"string",
+            "store":"yes",
+	    "index_analyzer": "index_ansj",
+            "search_analyzer": "query_ansj"	
+         },
+	"account_type":{
+            "type":"string",
+            "store":"yes",
+            "index":"not_analyzed"
+      },
+      "update_time":{
+            "type":"long",
+            "store":"yes",
+            "index":"not_analyzed"
+         }
+      }  
+}
